@@ -2,7 +2,7 @@
 
 Inspiré par l'Handy Menu ([https://debian-facile.org/git/ProjetsDF/handymenu](https://debian-facile.org/git/ProjetsDF/handymenu)) ([https://framagit.org/Steph/handymenu-primtux](https://framagit.org/Steph/handymenu-primtux)).
 
-Cette application à pour but de permettre d’être un remplacement simple aux lanceurs d'application traditionnels afin de simplifier l'utilisateur d'outils informatique aux personnes débutantes.
+Cette application à pour but de permettre d’être un remplacement simple aux lanceurs d'applications traditionnels afin de simplifier l'utilisation d'outils informatiques aux personnes débutantes.
 
 ![](docs/imgs/2023-05-07_16-30-03.png)
 
