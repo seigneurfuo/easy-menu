@@ -11,9 +11,10 @@ from PyQt5.uic import loadUi
 
 # noinspection PyShadowingNames
 class CategoryTab(QWidget):
-    def __init__(self, config, category):
+    def __init__(self, parent, config, category):
         super().__init__()
 
+        self.parent = parent
         self.config = config
         self.category = category
 
@@ -120,7 +121,7 @@ class MainWindow(QMainWindow):
 
     def fill_tabs(self):
         for category in self.config["categories"]:
-            category_tab = CategoryTab(self.config, category)
+            category_tab = CategoryTab(self, self.config, category)
             category_tab.fill_applications()
 
             self.tab_widget.addTab(category_tab, category_tab.icon, category_tab.label)
