@@ -132,10 +132,6 @@ class MainWindow(QMainWindow):
         self.fill_tabs()
 
     def launch_application(self, application):
-        if not os.path.isfile(application["executable"]):
-            self.statusbar.showMessage("Executable introuvable !")
-            return
-
         process = QProcess.startDetached(application["executable"])
         if not process:
             self.statusbar.showMessage("Erreur lors du lancement de l'éxécutable !")
