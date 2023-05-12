@@ -55,8 +55,10 @@ class CategoryTab(QWidget):
             application_button.setFixedSize(self.config["buttons_size"], self.config["buttons_size"])
 
             # Le commentaire n'est pas obligatoire
-            if "comment" in application:
-                application_button.setToolTip(application["comment"])
+            #if "comment" in application:
+            #    application_button.setToolTip(application["comment"])
+
+            application_button.setToolTip(application["label"])
 
             # ----- Icone -----
 
