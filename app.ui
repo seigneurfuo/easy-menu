@@ -44,11 +44,17 @@
    <addaction name="menug"/>
   </widget>
   <action name="action_quit">
+   <property name="icon">
+    <iconset theme="exit"/>
+   </property>
    <property name="text">
     <string>Quitter</string>
    </property>
   </action>
   <action name="action_reload_config_file">
+   <property name="icon">
+    <iconset theme="reload"/>
+   </property>
    <property name="text">
     <string>Recharger le fichier de configuration</string>
    </property>
