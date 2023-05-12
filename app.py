@@ -8,8 +8,8 @@ from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QToolButton, QApplication, QMainWindow, QWidget, QGridLayout, QScrollArea
 from PyQt5.uic import loadUi
 
+APP_NAME = "easymenu"
 
-# noinspection PyShadowingNames
 class CategoryTab(QWidget):
     def __init__(self, parent, config, category):
         super().__init__()
@@ -88,9 +88,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.app_name = "easymenu"
-
-        self.config_filepath = os.path.join(Path.home(), ".config/{}.json".format(self.app_name.lower()))
+        self.config_filepath = os.path.join(Path.home(), ".config/{}.json".format(APP_NAME.lower()))
         self.config = None
 
         self.init_ui()
@@ -104,7 +102,7 @@ class MainWindow(QMainWindow):
 
     def init_ui(self):
         loadUi(os.path.join(os.path.dirname(__file__), "app.ui"), self)
-        self.setWindowTitle(self.app_name)
+        self.setWindowTitle(APP_NAME)
 
     def init_events(self):
         self.action_quit.triggered.connect(self.close)
@@ -145,6 +143,8 @@ if __name__ == "__main__":
     cgitb.enable()
 
     qapplication = QApplication(sys.argv)
+    qapplication.setApplicationName(APP_NAME)
+    qapplication.setApplicationDisplayName(APP_NAME)
 
     mainwindow = MainWindow()
     mainwindow.move(qapplication.desktop().screen().rect().center() - mainwindow.rect().center())
