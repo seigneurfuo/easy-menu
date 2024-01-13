@@ -149,6 +149,6 @@ if __name__ == "__main__":
     mainwindow = MainWindow()
     mainwindow.move(qapplication.desktop().screen().rect().center() - mainwindow.rect().center())
     # mainwindow.showFullScreen()
-    mainwindow.show()
+    mainwindow.showMaximized()
 
     qapplication.exec()
