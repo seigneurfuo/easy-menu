@@ -4,7 +4,7 @@ Inspiré par l'Handy Menu ([https://debian-facile.org/git/ProjetsDF/handymenu](h
 
 Cette application à pour but de permettre d’être un remplacement simple aux lanceurs d'applications traditionnels afin de simplifier l'utilisation d'outils informatiques aux personnes débutantes.
 
-![](docs/imgs/2023-05-07_16-30-03.png)
+![](docs/imgs/2024-06-07-12-15-04.png)
 
 ## La configuration du menu
 
